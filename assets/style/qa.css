@@ -1,0 +1,32 @@
+.qa h3 {
+  font-size: 32px;
+  margin-bottom: 36px; }
+
+.qa ul {
+  counter-reset: num; }
+  .qa ul li {
+    margin-bottom: 32px; }
+    .qa ul li h6 {
+      margin-bottom: 16px; }
+      .qa ul li h6::before {
+        content: "Q" counter(num) ".";
+        counter-increment: num; }
+    .qa ul li p {
+      margin-left: 6rem; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .qa ul li p {
+    margin-left: 4rem; } }
+
+@media (max-width: 767px) {
+  .qa h3 {
+    font-size: 20px;
+    margin-bottom: 24px; }
+  .qa ul li {
+    margin-bottom: 20px; }
+    .qa ul li h6 {
+      margin-bottom: 8px; }
+    .qa ul li p {
+      margin-left: 0; } }
+
+/*# sourceMappingURL=qa.css.map */
