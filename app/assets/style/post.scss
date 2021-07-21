@@ -1,0 +1,199 @@
+.blogNav{
+  background-color: var(--primary-main);
+}
+.list.post{
+  ul {
+    display: flex;
+  }
+  li{
+    margin: 12px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  a{
+    font-weight: 700;
+    color: #fff;
+    &:hover{
+      opacity: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+.breadCrumb{
+  display: flex;
+  margin: 8px 0;
+  li:not(:last-child)::after{
+    content: "/";
+    display: inline-block;
+    margin: 0px 4px;
+  }
+  a{
+    color: black;
+  }
+  [data-location="true"]{
+    color: var(--primary-main);
+  }
+}
+.tag {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-light);
+  &.list{
+    justify-content: flex-start;
+    li {
+      padding-right: 24px;
+    }
+  }
+}
+.blogBd {
+  display: flex;
+  margin-bottom: 150px;
+  &>article {
+    width: 75%;
+    margin-right: 2rem;
+  }
+  &>aside {
+    width: 23%;
+    color: var(--primary-light);
+  }
+  .blogBdImg{
+    width: 100%;
+  }
+}
+.blogArticleMain{
+  color: var(--default);
+  font-size: 20px;
+  p{
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+}
+.tagsHd {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 38px;
+    height: 28px;
+    display: inline-block;
+    margin-right: 12px;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-tag.svg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+.subtitle h3{
+  font-size: 28px;
+}
+.postPagenation{
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagenationLabel{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  transition: 0.2s;
+  position: relative;
+  &:hover{
+    font-weight: 700;
+  }
+  img{
+    display: inline-block;
+    margin-right: 12px;
+  }
+  &:nth-child(2){
+    flex-direction: row-reverse;
+  }
+}
+.shareMedia {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  a {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .blogBd {
+    margin-bottom: 96px;
+  }
+  .blogTitle {
+    font-size: 32px;
+  }
+  .subtitle {
+    &>h3 {
+      font-size: 16px;
+    }
+    &>p {
+      font-size: 14px;
+    }
+  }
+  .tag{
+    font-size: 16px;
+  }
+  .tagsHd{
+    font-size: 20px;
+  }
+  .shareMedia{
+    font-size: 16px;
+  }
+  .pagenationLabel{
+    font-size: 16px;
+  }
+  .postPagenation{
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  [data-query="PT"]{
+    display: none;
+  }
+  .list.post li {
+    margin: 16px 10px;
+  }
+  .blogBd {
+    margin-bottom: 56px;
+    flex-direction: column;
+    &>article {
+      width: 100%;
+      margin-right: 0;
+    }
+    &>aside {
+      width: 100%;
+    }
+  }
+  .blogTitle {
+    font-size: 20px;
+    color: var(--primary-main);
+  }
+  .subtitle{
+    margin-bottom: 20px;
+    &>h3, &>p {
+      font-size: 14px;
+    }
+  }
+  .tag{
+    font-size: 14px;
+  }
+  .pagenationLabel{
+    font-size: 14px;
+    &:nth-child(2){
+      flex-direction: row;
+    }
+  }
+  .postPagenation{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+}
