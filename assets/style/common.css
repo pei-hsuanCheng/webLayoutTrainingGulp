@@ -140,6 +140,96 @@
       margin-right: 16px;
       background-color: var(--primary-main); }
 
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.tab {
+  width: 30%;
+  min-width: 120px;
+  max-width: 350px;
+  border: 1px solid var(--light-default);
+  position: relative;
+  font-size: 32px; }
+  .tab::after {
+    content: "";
+    width: calc(100% + 2px);
+    height: 0;
+    background-color: var(--primary-light);
+    position: absolute;
+    bottom: 0; }
+  .tab.act::after {
+    height: 8px; }
+  .tab a {
+    padding: 26px 8px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: black; }
+    .tab a::before {
+      content: "";
+      margin-right: 8px;
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+  .tab .optional::before {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond-black.svg"); }
+  .tab .sunglasses::before {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun-black.svg"); }
+  .tab .functional::before {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder-black.svg"); }
+
+.mTwoBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination > a {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    padding: 12px 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid black;
+    border-right: 0px;
+    color: black; }
+    .pagination > a:hover {
+      background-color: black;
+      color: white; }
+    .pagination > a:last-child {
+      border-right: 1px solid black; }
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 979px) {
   .navHeader {
@@ -157,7 +247,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 96px; } }
+    margin-bottom: 96px; }
+  .tab a {
+    padding: 14px 8px;
+    font-size: 24px; }
+    .tab a::before {
+      width: 32px;
+      height: 32px; } }
 
 /* mobile */
 @media (max-width: 767px) {
@@ -230,6 +326,14 @@
     margin-right: 8px; }
   .mArticleHd {
     margin-top: 28px;
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+  .tab.act::after {
+    height: 4px; }
+  .tab a {
+    padding: 6px 8px;
+    font-size: 14px; }
+    .tab a::before {
+      width: 16px;
+      height: 16px; } }
 
 /*# sourceMappingURL=common.css.map */

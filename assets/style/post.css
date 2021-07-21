@@ -34,7 +34,7 @@
 .tag {
   font-size: 24px;
   font-weight: 700;
-  color: var(--primary-main); }
+  color: var(--primary-light); }
   .tag.list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;

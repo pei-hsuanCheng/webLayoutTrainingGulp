@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>商品</title>
+  <title>門市據點</title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,21 +21,55 @@
       </a>
     </div>
     <nav class="nav">
-      <li><a href="product.html">系列鏡框</a></li>
+      <li><a href="product-optical.html">系列鏡框</a></li>
       <li><a href="store.html">門市據點</a></li>
       <li><a href="blog.html">部落格</a></li>
       <li><a href="qa.html">常見問題</a></li>
     </nav>
   </header>
   <main class="main">
-    <div>商品</div>
+     
+    <article class="mArticle">
+  <div class="container store">
+    <header class="mArticleHd">
+      <h2 class="font-bold">門市據點</h2>
+    </header>
+    <label for="store" class="storLabel">
+      選擇分店
+      <select value="TP">
+        <option value="TP">台北中山旗艦店</option>
+      </select>
+    </label>
+    <div class="list storInfo">
+      <div>
+        <img class="storeImg" src="https://hexschool.github.io/webLayoutTraining1st/week3/locate1.jpeg" alt="locate img">
+        <div class="storeCard">
+          <img class="storeCardImg" src="https://hexschool.github.io/webLayoutTraining1st/week3/locate1.jpeg" alt="locate img">
+          <h6 class="storeCardTitle">台北中山旗艦店</h6>
+          <div class="storeCardCnt">
+            <p class="storeTel">電話：(02)000-1234</p>
+            <p class="storeOpen">營業時間：10:00-21:00</p>
+            <p class="storeAddr">地址：台北市中山區南京東路25巷2-1號</p>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4669120881717!2d121.52125247069063!3d25.052159125350578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc45a4fb872906ad6!2z6bq15bGL5LiA54eIIE1lbnlhIEl0dG8gVGFpd2Fu!5e0!3m2!1szh-TW!2stw!4v1626849317591!5m2!1szh-TW!2stw"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+    </div>
+  </div>
+</article>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="list footerNav">
         <ul class="list">
           <li><a href="index.html">首頁</a></li>
-          <li><a href="product.html">系列鏡框</a></li>
+          <li><a href="product-optical.html">系列鏡框</a></li>
           <li><a href="store.html">門市據點</a></li>
           <li><a href="blog.html">部落格</a></li>
           <li><a href="qa.html">常見問題</a></li>

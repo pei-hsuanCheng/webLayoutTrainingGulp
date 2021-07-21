@@ -1,0 +1,49 @@
+.mFrameHd.product h2 {
+  font-size: 42px; }
+
+.mFrameHd.product h3 {
+  font-size: 32px; }
+
+.productCardWrap {
+  width: 25%;
+  padding: 15px; }
+
+.productCardCnt {
+  text-transform: uppercase; }
+
+.productCardImg {
+  width: 100%; }
+
+.productColor span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 4px; }
+  .productColor span:nth-child(1) {
+    background-color: #5F3E2D; }
+  .productColor span:nth-child(2) {
+    background-color: #B75929; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .mFrameHd.product h2 {
+    font-size: 32px; }
+  .mFrameHd.product h3 {
+    font-size: 24px; }
+  .productCardWrap {
+    width: 50%;
+    padding: 15px; } }
+
+@media (max-width: 767px) {
+  .mFrameHd.product h2 {
+    font-size: 24px; }
+  .mFrameHd.product h3 {
+    font-size: 16px; }
+  .productCardWrap {
+    width: 100%; }
+  .productColor span {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px; } }
+
+/*# sourceMappingURL=product.css.map */
