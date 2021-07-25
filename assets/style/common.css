@@ -1,0 +1,20 @@
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.optionalIcon::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond-black.svg"); }
+
+.sunglassesIcon::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun-black.svg"); }
+
+.functionalIcon::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder-black.svg"); }
+
+/*# sourceMappingURL=common.css.map */

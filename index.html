@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="navHeader">
+  <header class="lHd">
     <div class="logo">
       <h1>glasses</h1>
       <a href="index.html">
@@ -30,17 +30,23 @@
   <main class="main">
      
     <article class="banner">
-  <img data-query="P" src="https://hexschool.github.io/webLayoutTraining1st/week3/banner.png" alt="banner" />
-  <img data-query="M" src="https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png" alt="banner" />
-  <section>
-    <h4 class="color-primary-main">Promise-Desert 2020 早春系列</h4>
-    <h2 class="color-primary-main font-bold">看得清，才能看得遠</h2>
+  <figure class="bannerImg">
+    <img data-query="P" src="https://hexschool.github.io/webLayoutTraining1st/week3/banner.png" alt="banner" />
+    <img data-query="M" src="https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png" alt="banner" />
+  </figure>
+  <section class="bannerBd">
+    <h4 class="color-primary-main fz-lg-9 fz-md-5 fz-sm-4">
+      Promise-Desert 2020 早春系列
+    </h4>
+    <h2 class="color-primary-main font-bold fz-lg-16 fz-md-12 fz-sm-8">
+      看得清，才能看得遠
+    </h2>
   </section>
 </article>
 <article class="mFrame profession">
   <div class="container">
     <header class="mFrameHd color-primary-main">
-      <h3 class="font-bold">用專業的心，做專業的事</h3>
+      <h3 class="fz-lg-12 fz-md-8 fz-sm-6">用專業的心，做專業的事</h3>
     </header>
     <div class="mFrameBd">
       <ul class="list">
@@ -122,7 +128,7 @@
 <article class="mFrame series">
   <div class="container">
     <header class="mFrameHd color-primary-main">
-      <h3 class="font-bold">經典系列鏡框</h3>
+      <h3 class="fz-lg-12 fz-md-8 fz-sm-6">經典系列鏡框</h3>
     </header>
     <div class="mFrameBd">
       <ul class="seriesList">
@@ -145,7 +151,7 @@
 <article class="mFrame cobrand">
   <div class="container">
     <header class="mFrameHd color-f">
-      <h3 class="font-bold">聯名設計鏡框</h3>
+      <h3 class="fz-lg-12 fz-md-8 fz-sm-6">聯名設計鏡框</h3>
     </header>
     <div class="mFrameBd">
       <ul class="list cobrand">
@@ -168,7 +174,7 @@
 <article class="mFrame commend">
   <div class="container">
     <header class="mFrameHd">
-      <h3 class="font-bold">顧客推薦</h3>
+      <h3 class="fz-lg-12 fz-md-8 fz-sm-6">顧客推薦</h3>
     </header>
     <div class="mFrameBd">
       <ul class="list commend">
@@ -226,11 +232,13 @@
 </article>
 <article class="mFrame contact">
   <div class="container-sm">
-    <header class="mFrameHd">
+    <header class="mFrameHd fz-lg-12 fz-md-8 fz-sm-6">
       <h3>聯絡我們</h3>
     </header>
     <div class="mFrameBd contact">
-      <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <p class="fz-lg-5 fz-md-4 fz-sm-4 mb-lg-5 mb-md-4 mb-sm-2">
+        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+      </p>
       <form action="post">
         <div class="formItem">
           <label for="name" class="formLabel">姓名</label>
@@ -252,23 +260,23 @@
           <input type="checkbox" id="agree" class="formCheckbox">
           <label for="agree" class="formLabel" >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
         </div>
-        <button class="contactFormBtn">確認送出</button>
+        <button class="formBtn">確認送出</button>
       </form>
     </div>
   </div>
 </article>
   </main>
-  <footer class="footer">
+  <footer class="lFt">
     <div class="container">
-      <div class="list footerNav">
-        <ul class="list">
+      <div class="nav navList">
+        <ul class="nav urlList">
           <li><a href="index.html">首頁</a></li>
           <li><a href="product-optical.html">系列鏡框</a></li>
           <li><a href="store.html">門市據點</a></li>
           <li><a href="blog.html">部落格</a></li>
           <li><a href="qa.html">常見問題</a></li>
         </ul>
-        <ul class="list">
+        <ul class="nav socialMediaList">
           <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt=""></a></li>
           <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt=""></a></li>
           <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt=""></a></li>
@@ -278,9 +286,9 @@
         <li><a href="tel:0800-000-000">0800-000-000</a></li>
         <li><a href="email:glasses@business.com">glasses@business.com</a></li>
       </ul>
-      <div class="list copywriting">
-        <small>Copyright © 2020 Glasses.All rights reserved.</small>
-        <ul class="list">
+      <div class="d-flex justify-content-between flex-sm-column">
+        <small class="copywriting">Copyright © 2020 Glasses.All rights reserved.</small>
+        <ul class="nav lawList">
           <li><a href="#">隱私權政策</a></li>
           <li><a href="#">服務條款</a></li>
         </ul>
