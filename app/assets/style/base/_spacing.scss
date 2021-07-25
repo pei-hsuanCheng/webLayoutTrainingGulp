@@ -1,0 +1,65 @@
+
+.m-auto {
+  margin: 0 auto;
+}
+
+@for $i from 1 through 18 {
+  .mt-lg-#{$i} {
+    margin-top: $spacing-base * $i;
+  }
+  .mb-lg-#{$i} {
+    margin-bottom: $spacing-base * $i;
+  }
+  .pt-lg-#{$i} {
+    padding-top: $spacing-base * $i;
+  }
+  .pb-lg-#{$i} {
+    padding-bottom: $spacing-base * $i;
+  }
+}
+
+@for $i from 1 through 18 {
+  .mt-md-#{$i} {
+    @include Tablet {
+      margin-top: $spacing-base * $i;
+    }
+  }
+  .mb-md-#{$i} {
+    @include Tablet {
+      margin-bottom: $spacing-base * $i;
+    }
+  }
+  .pt-md-#{$i} {
+    @include Tablet {
+      padding-top: $spacing-base * $i;
+    }
+  }
+  .pb-md-#{$i} {
+    @include Tablet {
+      padding-bottom: $spacing-base * $i;
+    }
+  }
+}
+
+@for $i from 1 through 18 {
+  .mt-sm-#{$i} {
+    @include M {
+      margin-top: $spacing-base * $i;
+    }
+  }
+  .mb-sm-#{$i} {
+    @include M {
+      margin-bottom: $spacing-base * $i;
+    }
+  }
+  .pt-sm-#{$i} {
+    @include M {
+      padding-top: $spacing-base * $i;
+    }
+  }
+  .pb-sm-#{$i} {
+    @include M {
+      padding-bottom: $spacing-base * $i;
+    }
+  }
+}

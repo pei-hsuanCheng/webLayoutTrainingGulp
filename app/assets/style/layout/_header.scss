@@ -1,0 +1,43 @@
+.lHd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-light;
+  padding: 30px 88px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 1;
+  @include Tablet{
+    padding: 30px 40px;
+  }
+  @include M{
+    display: block;
+    padding: 0;
+    .logo{
+      padding: 10px;
+      text-align: center;
+    }
+    .nav{
+      flex-wrap: wrap;
+      &> li {
+        border: 1px solid white;
+        width: 50%;
+        padding: 8px;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.logo {
+  &>h1 {
+    position: absolute;
+    left: -10000px;
+  }
+  img { 
+    width: 80px;
+  }
+}

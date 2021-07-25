@@ -1,0 +1,18 @@
+.breadCrumb {
+  display: flex;
+  margin: 8px 0;
+
+  li:not(:last-child)::after {
+    content: "/";
+    display: inline-block;
+    margin: 0px 4px;
+  }
+
+  a {
+    color: black;
+  }
+
+  [data-location="true"]{
+    color: $primary-main;
+  }
+}

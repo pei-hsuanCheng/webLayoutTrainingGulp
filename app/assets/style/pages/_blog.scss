@@ -1,0 +1,158 @@
+.mArticleHd.blog {
+  margin-top: 40px;
+
+  @include Tablet {
+    margin-top: 32px;
+  }
+}
+
+.blogCardWrap {
+  text-align: left;
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+  transition: $anim-time;
+  margin-bottom: 60px;
+
+  @include Tablet {
+    margin-bottom: 24px;
+  }
+
+  @include M {
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.01);
+  }
+}
+
+.blogCard{
+  display: flex;
+
+  @include M {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.blogCardImg{
+  align-self: start;
+
+  @include Tablet {
+    width: 40%;
+  }
+
+  @include M {
+    margin-bottom: 8px;
+  }
+}
+
+.blogCardCnt {
+  margin-left: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include Tablet {
+    margin-right: 30px;
+  }
+
+  @include M {
+    margin-left: 0;
+  }
+}
+
+.blogCardCntHd {
+  font-size: 32px;
+  color: $primary-main;
+
+  @include Tablet {
+    font-size: 20px;
+  }
+
+  @include M {
+    font-size: 16px;
+  }
+}
+
+.blogCardCntBd{
+  &>h6{
+    font-size: 32px;
+    color: $primary-main;
+
+    @include Tablet {
+      font-size: 20px;
+    }
+  }
+
+  &>p{
+
+    @include Tablet {
+      font-size: 14px;
+      position: relative;
+    }
+
+    @include M {
+      display: none;
+    }
+  }
+  [data-query="T"]{
+    @include Tablet {
+      display: inline-block;
+      margin-left: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+}
+
+.cardSubtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  
+  &h3 {
+    font-size: 20px;
+  }
+  
+  @include Tablet {
+    font-size: 14px;
+    margin-bottom: 12px;
+    
+    &>h3 {
+      font-size: 16px;
+    }
+
+    &>h6 {
+      font-size: 16px;
+    }
+
+    &>p {
+      font-size: 14px;
+    }
+  }
+  @include M {
+    margin-bottom: 0px;
+
+    &>h3 {
+      font-size: 14px;
+    }
+    
+    &>p {
+      font-size: 14px;
+    }
+  }
+}
+
+.blogCardAction {
+  font-weight: 900;
+  font-size: 36px;
+  text-align: right;
+  margin-top: 14px;
+  color: $primary-main;
+}

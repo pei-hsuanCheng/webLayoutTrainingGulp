@@ -1,0 +1,40 @@
+.mFrame {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  @include Tablet {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  @include M {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+}
+
+.mFrameHd {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @include Tablet {
+    margin-bottom: 32px;
+  }
+
+  @include M {
+    margin-bottom: 20px;
+  }
+}
+
+.mFrameFt.pagination {
+  margin-top: 96px;
+  
+  @include Tablet {
+    margin-bottom: 66px;
+  }
+
+  @include M {
+    margin-bottom: 40px;
+  }
+}

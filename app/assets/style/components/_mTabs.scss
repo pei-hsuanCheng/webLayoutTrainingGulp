@@ -1,0 +1,83 @@
+.tabs{
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  width: 30%;
+  min-width: 120px;
+  max-width: 350px;
+  border: 1px solid $default-light;
+  position: relative;
+  font-size: 32px;
+
+  @include Tablet {
+    font-size: 24px;
+  }
+
+  @include M {
+    font-size: 20px;
+  }
+
+  &::after {
+    content: "";
+    width: calc(100% + 2px);
+    height: 0;
+    background-color: $primary-light;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &.act::after {
+    height: 8px;
+
+    @include Tablet {
+      height: 4px;
+    }
+  }
+  
+  a {
+    padding: 26px 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    
+    &:hover {
+      background-color: $default-light;
+    }
+
+    @include Tablet {
+      padding: 14px 8px;
+      font-size: 24px;
+    }
+
+    @include M {
+      padding: 6px 8px;
+      font-size: 14px;
+    }
+
+    &::before {
+      content: "";
+      margin-right: 8px;
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+
+      @include Tablet {
+        width: 32px;
+        height: 32px;
+      }
+
+      @include M {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

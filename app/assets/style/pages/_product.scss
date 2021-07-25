@@ -1,0 +1,92 @@
+.mTwoBanner{
+  display: flex;
+}
+.mFrameHd.product{
+  h2{
+    font-size: 42px;
+
+    @include Tablet {
+      font-size: 32px;
+    }
+
+    @include M {
+      font-size: 24px;
+    }
+  }
+  h3{
+    font-size: 32px;
+
+    @include Tablet {
+      font-size: 24px;
+    }
+
+    @include M {
+      font-size: 16px;
+    }
+  }
+}
+
+.productCard{
+  cursor: pointer;
+  transition: $anim-time;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 2px $default-light;
+  }
+}
+
+.productCardWrap{
+  width: 25%;
+  padding: 15px;
+
+  @include Tablet {
+    width: 50%;
+    padding: 15px;
+
+    &:nth-child(n+11) {
+      display: none;
+    }
+  }
+
+  @include M {
+    width: 100%;
+    
+    &:nth-child(n+4) {
+      display: none;
+    }
+  }
+}
+
+.productCardCnt {
+  text-transform: uppercase;
+}
+
+.productCardImg {
+  height: 100%;
+  object-fit: cover;
+}
+
+.productColor span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 4px;
+
+  @include M {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  &:nth-child(1) {
+    background-color: #5F3E2D;
+  }
+
+  &:nth-child(2) {
+    background-color: #B75929;
+  }
+}

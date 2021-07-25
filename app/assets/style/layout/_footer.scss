@@ -1,0 +1,112 @@
+.lFt {
+  padding: 32px;
+  background-color: $primary-light;
+  color: white;
+
+  @include M {
+    padding: 24px 15px;
+
+    &>.container {
+      position: relative;
+    }
+  }
+}
+
+.socialMediaList {
+  @include nav-spacing(32px, 24px, 24px);
+
+  img {
+    width: 48px;
+  
+    @include Tablet {
+      width: 24px;
+    }
+    
+    @include M {
+      width: 24px;
+    }
+  }
+}
+
+.navList {
+
+  @include M {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.urlList {
+
+  @include M {
+    display: none;
+  }
+}
+
+.copywriting {
+
+  @include M{
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.lawList{
+
+  @include nav-spacing(32px, 24px, 24px){
+    padding: 0;
+  }
+  
+  @include M{
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+}
+
+.contactInfo {
+  font-size: 36px;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid white;
+
+  @include M {
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  &>li>a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  a::before {
+    @include pseudo-icon-background(36px, 36px, 22px);
+
+    @include M {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.contactInfo li:first-child {
+
+  @include M {
+    margin-bottom: 8px;
+  }
+
+  a::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg");
+  }
+}
+
+.contactInfo li:last-child a::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg");
+}

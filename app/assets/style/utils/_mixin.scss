@@ -1,0 +1,43 @@
+@mixin PC {
+  @media (min-width: 980px) {
+    @content;
+  }
+}
+
+@mixin Tablet {
+  @media (min-width: 768px) and (max-width: 979px) {
+    @content;
+  }
+}
+
+@mixin M {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin nav-spacing($spacing-PC: 64px, $spacing-T: 40px, $spacing-M: 24px) {
+  &>li:not(:last-child) {
+    margin-right: $spacing-PC;
+    @content;
+
+    @include Tablet {
+      margin-right: $spacing-T;
+    }
+
+    @include M {
+      margin-right: $spacing-M;
+    }
+  }
+}
+
+@mixin pseudo-icon-background($width, $height, $spacing){
+  content: "";
+  width: $width;
+  height: $height;
+  margin-right: $spacing;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @content;
+}

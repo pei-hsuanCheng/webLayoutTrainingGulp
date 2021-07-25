@@ -1,0 +1,195 @@
+.blogNav{
+  background-color: $primary-main;
+}
+
+.list.post{
+  ul {
+    display: flex;
+  }
+  li{
+    margin: 12px;
+    @include M{
+      margin: 16px 10px;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+.tag {
+  font-size: 24px;
+  font-weight: 700;
+  color: $primary-light;
+
+  @include Tablet {
+    font-size: 16px;
+  }
+
+  @include M {
+    font-size: 14px;
+  }
+
+  &.list {
+    justify-content: flex-start;
+    li {
+      padding-bottom: 8px;
+      padding-right: 24px;
+
+      @include Tablet {
+        padding-bottom: 0px;
+        padding-right: 16px;
+      }
+
+      @include M {
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.blogBd {
+  display: flex;
+  margin-bottom: 150px;
+
+  @include Tablet {
+    margin-bottom: 96px;
+  }
+
+  @include M {
+    margin-bottom: 56px;
+    flex-direction: column;
+  }
+
+  &>article {
+    width: 75%;
+    margin-right: 2rem;
+    @include M{
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &>aside {
+    width: 23%;
+    color: $primary-light;
+    @include M{
+      width: 100%;
+    }
+  }
+
+  .blogBdImg {
+    width: 100%;
+  }
+}
+
+.blogArticleMain{
+  color: $default;
+  font-size: 20px;
+  margin-top: 20px;
+  
+  p {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.tagsHd {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+
+  @include Tablet{
+    font-size: 20px;
+  }
+
+  &::before {
+    @include pseudo-icon-background(38px, 28px, 12px) {
+      display: inline-block;
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-tag.svg");
+    }
+  }
+}
+
+.postPagenation {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  
+  @include Tablet{
+    margin-top: 16px;
+  }
+  
+  @include M{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+}
+
+.pagenationLabel{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  transition: $anim-time;
+  position: relative;
+
+  @include Tablet {
+    font-size: 16px;
+  }
+
+  @include M {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    color: black;
+    font-weight: 700;
+  }
+
+  img {
+    display: inline-block;
+    margin: 0px 12px;
+  }
+
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+    
+    @include M{
+      flex-direction: row;
+    }
+  }
+}
+
+.shareMedia {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+
+  @include Tablet{
+    font-size: 16px;
+  }
+
+  a {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 16px;
+  }
+}
+
+.blogTitle {
+  font-size: 48px;
+
+  @include Tablet {
+    font-size: 32px;
+  }
+
+  @include M {
+    font-size: 20px;
+    color: $primary-main;
+  }
+}

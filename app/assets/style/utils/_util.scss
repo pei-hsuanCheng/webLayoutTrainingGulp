@@ -1,0 +1,49 @@
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-lg-column {
+  flex-direction: column;
+}
+
+.flex-md-column {
+  @include Tablet {
+    flex-direction: column;
+  }
+}
+
+.flex-sm-column{
+  @include M {
+    flex-direction: column;
+  }
+}
+
+.d-lg-none {
+  @include PC {
+    display: none;
+  }
+}
+
+.d-md-none {
+  @include Tablet {
+    display: none;
+  }
+}
+
+.d-sm-none {
+  @include M {
+    display: none;
+  }
+}

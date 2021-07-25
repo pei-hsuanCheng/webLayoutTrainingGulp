@@ -1,0 +1,8 @@
+.nav {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  
+  @include nav-spacing(64px, 40px, 0px);
+}

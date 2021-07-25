@@ -1,9 +1,29 @@
-@import "reset";
+@import "utils/_variables";
+@import "utils/_mixin";
+@import "utils/_util";
+
+@import "base/_reset";
+@import "base/_base";
+@import "base/_typography";
+@import "base/_spacing";
+
+@import "layout/_header";
+@import "layout/_navigation";
+@import "layout/_footer";
+@import "layout/_grid";
+
+@import "components/_mArticle";
+@import "components/_mFrame";
+@import "components/_mPagination";
+@import "components/_mForm";
+@import "components/_mTabs";
+@import "components/_mBreadCrumb";
+
 @import "common";
-@import "util";
-@import "index";
-@import "qa";
-@import "blog";
-@import "post";
-@import "store";
-@import "product";
+
+@import "pages/_index";
+@import "pages/_qa";
+@import "pages/_blog";
+@import "pages/_post";
+@import "pages/_store";
+@import "pages/_product";

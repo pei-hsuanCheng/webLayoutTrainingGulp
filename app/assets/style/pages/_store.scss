@@ -1,0 +1,206 @@
+.storLabel{
+  font-size: 24px;
+  margin-bottom: 32px;
+  display: block;
+
+  @include Tablet {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  @include M {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  select {
+    margin-left: 20px;
+    padding: 10px 20px;
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
+.storeList {
+  display: flex;
+  flex-wrap: wrap;
+
+  &>li {
+    width: 33.3%;
+    padding: 0 15px 32px;
+
+    @include Tablet {
+      width: 50%;
+      padding: 0 15px 20px;
+    }
+
+    @include M {
+      width: 100%;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.storeCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.13);
+}
+
+.storeCardImg {
+  height: 100%;
+  object-fit: cover;
+}
+
+.storeCardTitle {
+  font-size: 24px;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.13);
+  font-weight: 700;
+
+  @include Tablet {
+    font-size: 16px;
+  }
+
+  @include M {
+    font-size: 16px;
+  }
+}
+
+.storeCardCnt {
+  padding: 28px 22px;
+
+  @include Tablet {
+    font-size: 14px;
+  }
+}
+
+.storeTel, .storeOpen, .storeAddr {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+
+  @include Tablet {
+    font-size: 14px;
+  }
+
+  @include M {
+    font-size: 14px;
+  }
+
+  &::before {
+    @include pseudo-icon-background(20px, 20px, 10px)
+    display: inline-block;
+  }
+}
+
+.storeTel::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone-black.svg");
+}
+
+.storeOpen::before {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg");
+}
+
+.storeAddr::before {
+  align-self: flex-start;
+  flex-shrink: 0;
+  transform: translateY(5px);
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-map.svg");
+}
+
+.storeCardAction {
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  background-color: black;
+  display: block;
+  transition: $anim-time;
+  border-top: 1px solid rgba(0,0,0,0.13);
+  text-align: center;
+
+  @include Tablet {
+    font-size: 14px;
+  }
+
+  &:hover{
+    background: white;
+    color: black;
+  }
+}
+
+.storeImg {
+  display: none;
+
+  @include Tablet {
+    width: 50%;
+    margin-right: 30px;
+    display: block;
+  }
+
+  @include M {
+    display: none;
+  }
+}
+
+.storLocateInfo{
+  iframe{
+    flex-grow: 1;
+
+    @include Tablet {
+      height: 40vh;
+    }
+  }
+}
+
+.storeInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding-right: 30px;
+
+  @include Tablet {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+
+  @include M {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+  
+  [data-query*="M"] {
+    display: none;
+
+    @include Tablet {
+      display: none;
+    }
+
+    @include M {
+      display: block;
+    }
+  }
+
+  [data-query*="T"] {
+    display: none;
+    
+    @include Tablet {
+      display: block;
+    }
+  }
+
+  [data-query*="P"] {
+    display: block;
+
+    @include Tablet {
+      display: none;
+    }
+
+    @include M {
+      display: none;
+    }
+  }
+}

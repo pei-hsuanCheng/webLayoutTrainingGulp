@@ -1,0 +1,52 @@
+.qa {
+  h3 {
+    font-size: 32px;
+    margin-bottom: 36px;
+
+    @include M {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.qaList {
+  counter-reset: num;
+
+  li {
+    margin-bottom: 32px;
+
+    @include M {
+      margin-bottom: 20px;
+    }
+  }
+
+  h6 {
+    font-size:20px;
+    margin-bottom: 16px;
+
+    @include M {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    &::before {
+      content: 'Q' counter(num) '.';
+      counter-increment: num; 
+    }
+  }
+
+  p {
+    margin-left: 6rem;
+    
+    @include Tablet {
+      margin-left: 4rem;
+    }
+    
+    @include M {
+      font-size: 14px;
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: $line-height;
+}
+
+.color-primary-main {
+  color: $primary-main;
+}
+
+.color-primary-light {
+  color: $primary-light;
+}
+
+.color-secondary {
+  color: $secondary;
+}
+
+.color-default {
+  color: $default;
+}
+
+.color-0 {
+  color: #000;
+}
+
+.color-f {
+  color: #fff;
+}
+
+.fz-lg-xs {
+  font-size: 14px;
+}
+
+.fz-md-xs {
+  @include Tablet {
+    font-size: 14px;
+  }
+}
+
+.fz-sm-xs {
+  @include M {
+    font-size: 14px;
+  }
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-italic{
+  font-style:italic;
+}
+
+@for $i from 3 through 18 {
+  .fz-lg-#{$i} {
+    font-size: $font-base * $i;
+  }
+}
+
+@for $i from 3 through 18 {
+  .fz-md-#{$i} {
+    @include Tablet {
+      font-size: $font-base * $i;
+    }
+  }
+}
+
+@for $i from 3 through 18 {
+  .fz-sm-#{$i} {
+    @include M {
+      font-size: $font-base * $i;
+    }
+  }
+}
