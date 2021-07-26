@@ -1147,7 +1147,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background: #aa0601;
-  padding: 30px 88px;
+  padding: 28px 88px;
   position: fixed;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1156,13 +1156,13 @@ p {
   z-index: 1; }
   @media (min-width: 768px) and (max-width: 979px) {
     .lHd {
-      padding: 30px 40px; } }
+      padding: 28px 40px; } }
   @media (max-width: 767px) {
     .lHd {
       display: block;
       padding: 0; }
       .lHd .logo {
-        padding: 10px;
+        padding: 8px;
         text-align: center; }
       .lHd .nav {
         -ms-flex-wrap: wrap;
@@ -1207,7 +1207,7 @@ p {
   color: white; }
   @media (max-width: 767px) {
     .lFt {
-      padding: 24px 15px; }
+      padding: 24px 16px; }
       .lFt > .container {
         position: relative; } }
 
@@ -1262,8 +1262,9 @@ p {
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start;
-    margin-bottom: 8px; } }
+            align-items: flex-start; }
+    .lawList > li {
+      margin-bottom: 8px; } }
 
 .contactInfo {
   font-size: 36px;
@@ -1310,10 +1311,10 @@ p {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg"); }
 
 .main {
-  margin-top: 108px; }
+  margin-top: 105px; }
   @media (max-width: 767px) {
     .main {
-      margin-top: 136px; } }
+      margin-top: 132px; } }
 
 .container {
   max-width: 1100px;
@@ -1324,20 +1325,20 @@ p {
       margin-right: 40px; } }
   @media (max-width: 767px) {
     .container {
-      max-width: 450px;
-      margin-left: 15px;
-      margin-right: 15px; } }
+      max-width: 448px;
+      margin-left: 16px;
+      margin-right: 16px; } }
 
 .container-sm {
   max-width: 730px;
   margin: 0 auto; }
   @media (min-width: 768px) and (max-width: 979px) {
     .container-sm {
-      margin-left: 15px;
-      margin-right: 15px; } }
+      margin-left: 16px;
+      margin-right: 16px; } }
   @media (max-width: 767px) {
     .container-sm {
-      padding: 0 15px; } }
+      padding: 0 16px; } }
 
 .mArticle {
   display: -webkit-box;
@@ -1422,7 +1423,7 @@ p {
   margin-top: 96px; }
   @media (min-width: 768px) and (max-width: 979px) {
     .mFrameFt.pagination {
-      margin-bottom: 66px; } }
+      margin-bottom: 64px; } }
   @media (max-width: 767px) {
     .mFrameFt.pagination {
       margin-bottom: 40px; } }
@@ -1465,17 +1466,14 @@ p {
 .formLabel {
   display: block;
   margin-bottom: 4px;
-  font-size: 16px; }
-  @media (min-width: 768px) and (max-width: 979px) {
+  font-size: 14px; }
+  @media (min-width: 980px) {
     .formLabel {
-      font-size: 14px; } }
-  @media (max-width: 767px) {
-    .formLabel {
-      font-size: 14px; } }
+      font-size: 16px; } }
 
 .formInput {
   border: 1px solid black;
-  padding: 12px 16px 14px;
+  padding: 12px 16px;
   display: block;
   margin-bottom: 16px;
   width: 100%; }
@@ -1534,12 +1532,12 @@ p {
     position: absolute;
     bottom: 0; }
   .tab.act::after {
-    height: 8px; }
-    @media (min-width: 768px) and (max-width: 979px) {
+    height: 4px; }
+    @media (min-width: 980px) {
       .tab.act::after {
-        height: 4px; } }
+        height: 8px; } }
   .tab a {
-    padding: 26px 8px;
+    padding: 24px 8px;
     font-weight: 700;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1555,11 +1553,11 @@ p {
       background-color: #dcdcdc; }
     @media (min-width: 768px) and (max-width: 979px) {
       .tab a {
-        padding: 14px 8px;
+        padding: 16px 8px;
         font-size: 24px; } }
     @media (max-width: 767px) {
       .tab a {
-        padding: 6px 8px;
+        padding: 8px;
         font-size: 14px; } }
     .tab a::before {
       content: "";
@@ -1667,7 +1665,7 @@ p {
 
 .iconCard {
   text-align: center;
-  padding: 0px 15px;
+  padding: 0px 16px;
   width: 25%; }
   @media (min-width: 768px) and (max-width: 979px) {
     .iconCard {
@@ -1734,20 +1732,16 @@ p {
               transform: translateX(-50%); } }
   .horizentalCardContent::before {
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     margin-right: 22px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
-    @media (min-width: 768px) and (max-width: 979px) {
+    @media (min-width: 980px) {
       .horizentalCardContent::before {
-        width: 40px;
-        height: 40px; } }
-    @media (max-width: 767px) {
-      .horizentalCardContent::before {
-        width: 40px;
-        height: 40px; } }
+        width: 48px;
+        height: 48px; } }
 
 .seriesList > .horizentalCard:nth-child(2) {
   -webkit-box-orient: horizontal;
@@ -1761,13 +1755,13 @@ p {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
-.seriesList > .horizentalCard:nth-child(1) > .horizentalCardContent::before {
+.optionalIconPrimary::before {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond.svg"); }
 
-.seriesList > .horizentalCard:nth-child(2) > .horizentalCardContent::before {
+.sunglassesIconPrimary::before {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg"); }
 
-.seriesList > .horizentalCard:nth-child(3) > .horizentalCardContent::before {
+.functionalIconPrimary::before {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder.svg"); }
 
 .mFrame.cobrand {
@@ -1777,7 +1771,7 @@ p {
 
 .list.cobrand > li {
   width: 50%;
-  padding: 0px 15px; }
+  padding: 0px 16px; }
   @media (max-width: 767px) {
     .list.cobrand > li {
       width: 100%;
@@ -1810,17 +1804,14 @@ p {
 .cobrandCardContent {
   position: absolute;
   color: #650300;
-  font-size: 72px; }
-  @media (min-width: 768px) and (max-width: 979px) {
+  font-size: 32px; }
+  @media (min-width: 980px) {
     .cobrandCardContent {
-      font-size: 32px; } }
-  @media (max-width: 767px) {
-    .cobrandCardContent {
-      font-size: 32px; } }
+      font-size: 72px; } }
 
 .list.commend > li {
   width: 25%;
-  padding: 0px 15px;
+  padding: 0px 16px;
   margin-bottom: 32px; }
   @media (min-width: 768px) and (max-width: 979px) {
     .list.commend > li {
@@ -1968,7 +1959,7 @@ p {
           justify-content: space-between; }
   @media (min-width: 768px) and (max-width: 979px) {
     .blogCardCnt {
-      margin-right: 30px; } }
+      margin-right: 32px; } }
   @media (max-width: 767px) {
     .blogCardCnt {
       margin-left: 0; } }
@@ -2057,7 +2048,7 @@ p {
   margin: 12px; }
   @media (max-width: 767px) {
     .list.post li {
-      margin: 16px 10px; } }
+      margin: 16px 8px; } }
   .list.post li:first-child {
     margin-left: 0; }
 
@@ -2090,7 +2081,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 150px; }
+  margin-bottom: 148px; }
   @media (min-width: 768px) and (max-width: 979px) {
     .blogBd {
       margin-bottom: 96px; } }
@@ -2162,8 +2153,8 @@ p {
       margin-top: 16px; } }
   @media (max-width: 767px) {
     .postPagenation {
-      margin-top: 10px;
-      margin-bottom: 30px;
+      margin-top: 12px;
+      margin-bottom: 32px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -2243,7 +2234,7 @@ p {
       margin-bottom: 20px; } }
   .storLabel select {
     margin-left: 20px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     width: 50%;
     font-size: 18px; }
 
@@ -2255,11 +2246,11 @@ p {
       flex-wrap: wrap; }
   .storeList > li {
     width: 33.3%;
-    padding: 0 15px 32px; }
+    padding: 0 16px 32px; }
     @media (min-width: 768px) and (max-width: 979px) {
       .storeList > li {
         width: 50%;
-        padding: 0 15px 20px; } }
+        padding: 0 16px 20px; } }
     @media (max-width: 767px) {
       .storeList > li {
         width: 100%;
@@ -2294,7 +2285,7 @@ p {
       font-size: 16px; } }
 
 .storeCardCnt {
-  padding: 28px 22px; }
+  padding: 28px 20px; }
   @media (min-width: 768px) and (max-width: 979px) {
     .storeCardCnt {
       font-size: 14px; } }
@@ -2306,13 +2297,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20px; }
-  @media (min-width: 768px) and (max-width: 979px) {
+  font-size: 14px; }
+  @media (min-width: 980px) {
     .storeTel, .storeOpen, .storeAddr {
-      font-size: 14px; } }
-  @media (max-width: 767px) {
-    .storeTel, .storeOpen, .storeAddr {
-      font-size: 14px; } }
+      font-size: 20px; } }
   .storeTel::before, .storeOpen::before, .storeAddr::before {
     content: "";
     width: 20px;
@@ -2357,16 +2345,11 @@ p {
     background: white;
     color: black; }
 
-.storeImg {
-  display: none; }
-  @media (min-width: 768px) and (max-width: 979px) {
-    .storeImg {
-      width: 50%;
-      margin-right: 30px;
-      display: block; } }
-  @media (max-width: 767px) {
-    .storeImg {
-      display: none; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .storeImg {
+    width: 50%;
+    margin-right: 32px;
+    display: block; } }
 
 .storLocateInfo iframe {
   -webkit-box-flex: 1;
@@ -2383,39 +2366,14 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
-  padding-right: 30px; }
-  @media (min-width: 768px) and (max-width: 979px) {
+  width: 100%;
+  padding-right: 0;
+  margin-bottom: 32px; }
+  @media (min-width: 980px) {
     .storeInfo {
-      width: 100%;
-      padding-right: 0;
-      margin-bottom: 32px; } }
-  @media (max-width: 767px) {
-    .storeInfo {
-      width: 100%;
-      padding-right: 0;
-      margin-bottom: 32px; } }
-  .storeInfo [data-query*="M"] {
-    display: none; }
-    @media (min-width: 768px) and (max-width: 979px) {
-      .storeInfo [data-query*="M"] {
-        display: none; } }
-    @media (max-width: 767px) {
-      .storeInfo [data-query*="M"] {
-        display: block; } }
-  .storeInfo [data-query*="T"] {
-    display: none; }
-    @media (min-width: 768px) and (max-width: 979px) {
-      .storeInfo [data-query*="T"] {
-        display: block; } }
-  .storeInfo [data-query*="P"] {
-    display: block; }
-    @media (min-width: 768px) and (max-width: 979px) {
-      .storeInfo [data-query*="P"] {
-        display: none; } }
-    @media (max-width: 767px) {
-      .storeInfo [data-query*="P"] {
-        display: none; } }
+      width: 50%;
+      padding-right: 32px;
+      margin-bottom: 0px; } }
 
 .mTwoBanner {
   display: -webkit-box;
@@ -2423,7 +2381,7 @@ p {
   display: flex; }
 
 .mFrameHd.product h2 {
-  font-size: 42px; }
+  font-size: 40px; }
   @media (min-width: 768px) and (max-width: 979px) {
     .mFrameHd.product h2 {
       font-size: 32px; } }
@@ -2459,11 +2417,10 @@ p {
 
 .productCardWrap {
   width: 25%;
-  padding: 15px; }
+  padding: 32px; }
   @media (min-width: 768px) and (max-width: 979px) {
     .productCardWrap {
-      width: 50%;
-      padding: 15px; }
+      width: 50%; }
       .productCardWrap:nth-child(n+11) {
         display: none; } }
   @media (max-width: 767px) {
