@@ -1,7 +1,7 @@
 .main {
-  margin-top: 108px;
-  @include M{
-    margin-top: 136px;
+  margin-top: 105px;
+  @include M {
+    margin-top: 132px;
   }
 }
 
@@ -10,14 +10,14 @@
   margin: 0 auto;
 
   @include Tablet {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: $spacing-base * 10;
+    margin-right: $spacing-base * 10;
   }
   
   @include M {
-    max-width: 450px;
-    margin-left: 15px;
-    margin-right: 15px;
+    max-width: $spacing-base * 112;
+    margin-left: $spacing-base * 4;
+    margin-right: $spacing-base * 4;
   }
 }
 
@@ -26,11 +26,11 @@
   margin: 0 auto;
   
   @include Tablet {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: $spacing-base * 4;
+    margin-right: $spacing-base * 4;
   }
 
   @include M {
-    padding: 0 15px;
+    padding: 0 $spacing-base * 4;
   }
 }

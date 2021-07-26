@@ -3,28 +3,32 @@
   justify-content: space-between;
   align-items: center;
   background: $primary-light;
-  padding: 30px 88px;
+  padding: $spacing-base * 7 $spacing-base * 22;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
   top: 0;
   z-index: 1;
-  @include Tablet{
-    padding: 30px 40px;
+
+  @include Tablet {
+    padding: $spacing-base * 7 $spacing-base * 10;
   }
-  @include M{
+
+  @include M {
     display: block;
     padding: 0;
-    .logo{
-      padding: 10px;
+
+    .logo {
+      padding: $spacing-base * 2;
       text-align: center;
     }
-    .nav{
+
+    .nav {
       flex-wrap: wrap;
       &> li {
         border: 1px solid white;
         width: 50%;
-        padding: 8px;
+        padding: $spacing-base * 2;
         text-align: center;
         margin: 0;
       }

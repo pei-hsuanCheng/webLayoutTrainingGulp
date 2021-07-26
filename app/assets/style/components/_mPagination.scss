@@ -2,8 +2,9 @@
 .pagination {
   display: flex;
   justify-content: center;
+
   &>a {
-    padding: 12px 16px;
+    padding: $spacing-base * 3 $spacing-base * 4;
     display: flex;
     justify-content: center;
     align-items: center;

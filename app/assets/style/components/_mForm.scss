@@ -6,30 +6,27 @@
 
 .formLabel {
   display: block;
-  margin-bottom: 4px;
-  font-size: 16px;
-
-  @include Tablet {
-    font-size: 14px;
-  }
-
-  @include M {
-    font-size: 14px;
+  margin-bottom: $spacing-base * 1;
+  font-size: $font-base * 4 - 2;
+  
+  @include PC {
+    font-size: $font-base * 4;
   }
 }
 
 .formInput {
   border: 1px solid black;
-  padding: 12px 16px 14px;
+  padding: $spacing-base * 3 $spacing-base * 4;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: $spacing-base * 4;
   width: 100%;
 }
 
 .formCheckbox {
   width: 24px;
   height: 24px;
-  margin-right: 4px;
+  margin-right: $spacing-base * 1;
+  
   & ~ label {
     display: inline;
     margin-bottom: 0;
@@ -38,17 +35,18 @@
 
 .formBtn {
   background-color: $primary-light;
-  padding: 16px;
+  padding: $spacing-base * 4;
   color: #fff;
   width: 40%;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: $spacing-base * 10;
   display: block;
   text-align: center;
   cursor: pointer;
   border: none;
   transition: $anim-time;
-  &:hover{
+
+  &:hover {
     background-color: $primary-dark;
   }
 }

@@ -1,37 +1,37 @@
 .mArticle {
   display: flex;
   flex-direction: column;
-  margin-bottom: 128px;
+  margin-bottom: $spacing-base * 32;
 
   @include Tablet {
     display: flex;
     flex-direction: column;
-    margin-bottom: 96px;
+    margin-bottom: $spacing-base * 24;
   }
 
   @include M {
     display: flex;
     flex-direction: column;
-    margin-bottom: 56px;
+    margin-bottom: $spacing-base * 14;
   }
 }
 
 .mArticleHd {
-  margin-top: 96px;
-  margin-bottom: 60px;
+  margin-top: $spacing-base * 24;
+  margin-bottom: $spacing-base * 15;
 
   @include M {
-    margin-top: 28px;
-    margin-bottom: 24px;
+    margin-top: $spacing-base * 7;
+    margin-bottom: $spacing-base * 6;
   }
 
   h2 {
-    font-size: 48px;
+    font-size: $font-base * 12;
     display: flex;
     align-items: center;
 
     @include M {
-      font-size: 28px;
+      font-size: $font-base * 7;
     }
     
     &::before {
@@ -39,7 +39,7 @@
       width: 8px;
       height: 70px;
       display: inline-block;
-      margin-right: 16px;
+      margin-right: $spacing-base * 4;
       background-color: $primary-main;
     }
   }

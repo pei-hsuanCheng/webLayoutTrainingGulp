@@ -1,11 +1,11 @@
 .breadCrumb {
   display: flex;
-  margin: 8px 0;
+  margin: $spacing-base * 2 0;
 
   li:not(:last-child)::after {
     content: "/";
     display: inline-block;
-    margin: 0px 4px;
+    margin: 0px $spacing-base * 1;
   }
 
   a {

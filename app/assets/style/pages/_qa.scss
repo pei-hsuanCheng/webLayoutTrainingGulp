@@ -1,11 +1,11 @@
 .qa {
   h3 {
-    font-size: 32px;
-    margin-bottom: 36px;
+    font-size: $font-base * 8;
+    margin-bottom: $spacing-base * 9;
 
     @include M {
-      font-size: 20px;
-      margin-bottom: 24px;
+      font-size: $font-base * 5;
+      margin-bottom: $spacing-base * 6;
     }
   }
 }
@@ -14,20 +14,20 @@
   counter-reset: num;
 
   li {
-    margin-bottom: 32px;
+    margin-bottom: $spacing-base * 8;
 
     @include M {
-      margin-bottom: 20px;
+      margin-bottom: $spacing-base * 5;
     }
   }
 
   h6 {
-    font-size:20px;
-    margin-bottom: 16px;
+    font-size: $font-base * 5;
+    margin-bottom: $spacing-base * 4;
 
     @include M {
-      font-size: 16px;
-      margin-bottom: 8px;
+      font-size: $font-base * 4;
+      margin-bottom: $spacing-base * 2;
     }
 
     &::before {
@@ -44,9 +44,9 @@
     }
     
     @include M {
-      font-size: 14px;
+      font-size:  $font-base * 4 - 2;
       margin-left: 0;
-      margin-bottom: 16px;
+      margin-bottom: $spacing-base * 4;
     }
   }
 }

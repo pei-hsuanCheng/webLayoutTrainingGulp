@@ -9,14 +9,14 @@
   max-width: 350px;
   border: 1px solid $default-light;
   position: relative;
-  font-size: 32px;
+  font-size: $font-base * 8;
 
   @include Tablet {
-    font-size: 24px;
+    font-size: $font-base * 6;
   }
 
   @include M {
-    font-size: 20px;
+    font-size: $font-base * 5;
   }
 
   &::after {
@@ -29,15 +29,15 @@
   }
 
   &.act::after {
-    height: 8px;
+    height: 4px;
 
-    @include Tablet {
-      height: 4px;
+    @include PC {
+      height: 8px;
     }
   }
   
   a {
-    padding: 26px 8px;
+    padding: $spacing-base * 6 $spacing-base * 2;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -49,18 +49,18 @@
     }
 
     @include Tablet {
-      padding: 14px 8px;
-      font-size: 24px;
+      padding: $spacing-base * 4 $spacing-base * 2;
+      font-size: $font-base * 6;
     }
 
     @include M {
-      padding: 6px 8px;
-      font-size: 14px;
+      padding: $spacing-base * 2;
+      font-size:  $font-base * 4 - 2;
     }
 
     &::before {
       content: "";
-      margin-right: 8px;
+      margin-right: $spacing-base * 2;
       width: 48px;
       height: 48px;
       display: inline-block;

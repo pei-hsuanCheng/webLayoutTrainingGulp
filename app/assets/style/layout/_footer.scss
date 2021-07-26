@@ -1,10 +1,10 @@
 .lFt {
-  padding: 32px;
+  padding: $spacing-base * 8;
   background-color: $primary-light;
   color: white;
 
   @include M {
-    padding: 24px 15px;
+    padding: $spacing-base * 6 $spacing-base * 4;
 
     &>.container {
       position: relative;
@@ -46,38 +46,41 @@
 .copywriting {
 
   @include M{
-    font-size: 14px;
-    margin-bottom: 8px;
+    font-size:  $font-base * 4 - 2;
+    margin-bottom: $spacing-base * 2;
   }
 }
 
 .lawList{
 
-  @include nav-spacing(32px, 24px, 24px){
+  @include nav-spacing(32px, 24px, 24px) {
     padding: 0;
   }
   
-  @include M{
-    font-size: 14px;
+  @include M {
+    font-size:  $font-base * 4 - 2;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 8px;
+    
+    &>li{
+      margin-bottom: $spacing-base * 2;
+    }
   }
 }
 
 .contactInfo {
-  font-size: 36px;
+  font-size: $font-base * 9;
   line-height: 1.5;
-  margin-top: 24px;
-  margin-bottom: 32px;
-  padding-bottom: 24px;
+  margin-top: $spacing-base * 6;
+  margin-bottom: $spacing-base * 8;
+  padding-bottom: $spacing-base * 6;
   border-bottom: 1px solid white;
 
   @include M {
-    padding-bottom: 24px;
-    margin-bottom: 16px;
+    padding-bottom: $spacing-base * 6;
+    margin-bottom: $spacing-base * 4;
     margin-top: 0;
-    font-size: 16px;
+    font-size: $font-base * 4;
   }
 
   &>li>a {
@@ -91,7 +94,7 @@
     @include M {
       width: 24px;
       height: 24px;
-      margin-right: 8px;
+      margin-right: $spacing-base * 2;
     }
   }
 }
@@ -99,7 +102,7 @@
 .contactInfo li:first-child {
 
   @include M {
-    margin-bottom: 8px;
+    margin-bottom: $spacing-base * 2;
   }
 
   a::before {

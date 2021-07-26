@@ -1,8 +1,8 @@
 .mArticleHd.blog {
-  margin-top: 40px;
+  margin-top: $spacing-base * 10;
 
   @include Tablet {
-    margin-top: 32px;
+    margin-top: $spacing-base * 8;
   }
 }
 
@@ -14,14 +14,14 @@
   border-radius: 4px;
   padding: 0;
   transition: $anim-time;
-  margin-bottom: 60px;
+  margin-bottom: $spacing-base * 15;
 
   @include Tablet {
-    margin-bottom: 24px;
+    margin-bottom: $spacing-base * 6;
   }
 
   @include M {
-    margin-bottom: 20px;
+    margin-bottom: $spacing-base * 5;
   }
 
   &:hover {
@@ -46,18 +46,18 @@
   }
 
   @include M {
-    margin-bottom: 8px;
+    margin-bottom: $spacing-base * 2;
   }
 }
 
 .blogCardCnt {
-  margin-left: 36px;
+  margin-left: $spacing-base * 9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @include Tablet {
-    margin-right: 30px;
+    margin-right: $spacing-base * 8;
   }
 
   @include M {
@@ -66,32 +66,32 @@
 }
 
 .blogCardCntHd {
-  font-size: 32px;
+  font-size: $font-base * 8;
   color: $primary-main;
 
   @include Tablet {
-    font-size: 20px;
+    font-size: $font-base * 5;
   }
 
   @include M {
-    font-size: 16px;
+    font-size: $font-base * 4;
   }
 }
 
-.blogCardCntBd{
-  &>h6{
-    font-size: 32px;
+.blogCardCntBd {
+  &>h6 {
+    font-size: $font-base * 8;
     color: $primary-main;
 
     @include Tablet {
-      font-size: 20px;
+      font-size: $font-base * 5;
     }
   }
 
-  &>p{
+  &>p {
 
     @include Tablet {
-      font-size: 14px;
+      font-size:  $font-base * 4 - 2;
       position: relative;
     }
 
@@ -99,12 +99,12 @@
       display: none;
     }
   }
-  [data-query="T"]{
+  [data-query="T"] {
     @include Tablet {
       display: inline-block;
-      margin-left: 8px;
+      margin-left: $spacing-base * 2;
       font-weight: 700;
-      font-size: 14px;
+      font-size:  $font-base * 4 - 2;
     }
   }
 }
@@ -113,46 +113,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: $spacing-base * 6;
   font-weight: 600;
   
   &h3 {
-    font-size: 20px;
+    font-size: $font-base * 5;
   }
   
   @include Tablet {
-    font-size: 14px;
-    margin-bottom: 12px;
+    font-size:  $font-base * 4 - 2;
+    margin-bottom: $spacing-base * 3;
     
     &>h3 {
-      font-size: 16px;
+      font-size: $font-base * 4;
     }
 
     &>h6 {
-      font-size: 16px;
+      font-size: $font-base * 4;
     }
 
     &>p {
-      font-size: 14px;
+      font-size:  $font-base * 4 - 2;
     }
   }
   @include M {
     margin-bottom: 0px;
 
     &>h3 {
-      font-size: 14px;
+      font-size:  $font-base * 4 - 2;
     }
     
     &>p {
-      font-size: 14px;
+      font-size:  $font-base * 4 - 2;
     }
   }
 }
 
 .blogCardAction {
   font-weight: 900;
-  font-size: 36px;
+  font-size: $font-base * 9;
   text-align: right;
-  margin-top: 14px;
+  margin-top: $spacing-base * 4 - 2;
   color: $primary-main;
 }

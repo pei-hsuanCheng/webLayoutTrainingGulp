@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.bannerImg{
+.bannerImg {
   width: 100%;
 
   [data-query="P"] {
@@ -15,6 +15,7 @@
     @include Tablet {
       display: none;
     }
+
     @include M {
       display: none;
     }
@@ -47,7 +48,7 @@
     right: 15px;
     left: auto;
     h4 {
-      font-size: 16px;
+      font-size: $font-base * 4;
     }
   }
 }
@@ -59,7 +60,7 @@
 
 .iconCard {
   text-align: center;
-  padding: 0px 15px;
+  padding: 0px $spacing-base * 4;
   width: 25%;
 
   @include Tablet {
@@ -73,15 +74,15 @@
 
 .iconCardTitle {
   color: $primary-main;
-  margin-bottom: 8px;
-  font-size: 24px;
+  margin-bottom: $spacing-base * 2;
+  font-size: $font-base * 6;
 }
 
 .iconCardIcon {
   fill: $primary-main;
   width: 83px;
   height: 83px;
-  margin-bottom: 24px;
+  margin-bottom: $spacing-base * 6;
 }
 
 .iconCardContent {
@@ -97,7 +98,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: $spacing-base * 8;
   }
 }
 
@@ -115,14 +116,14 @@
   margin: 0 2rem;
   display: flex;
   align-items: center;
-  font-size: 48px;
+  font-size: $font-base * 12;
   
   @include Tablet {
-    font-size: 28px;
+    font-size: $font-base * 7;
   }
   
   @include M {
-    font-size: 28px;
+    font-size: $font-base * 7;
     margin: 0;
     position: absolute;
     left: 50%;
@@ -130,16 +131,11 @@
   }
 
   &::before {
-    @include pseudo-icon-background(48px, 48px, 22px);
+    @include pseudo-icon-background(40px, 40px, 22px);
 
-    @include Tablet {
-      width: 40px;
-      height: 40px;
-    }
-    
-    @include M {
-      width: 40px;
-      height: 40px;
+    @include PC {
+      width: 48px;
+      height: 48px;
     }
   }
 }
@@ -152,13 +148,13 @@
   }
 }
 
-.seriesList > .horizentalCard:nth-child(1) > .horizentalCardContent::before {
+.optionalIconPrimary::before {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond.svg");
 }
-.seriesList > .horizentalCard:nth-child(2) > .horizentalCardContent::before {
+.sunglassesIconPrimary::before {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg");
 }
-.seriesList > .horizentalCard:nth-child(3) > .horizentalCardContent::before {
+.functionalIconPrimary::before {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder.svg");
 }
 
@@ -170,12 +166,12 @@
 
 .list.cobrand > li {
   width: 50%;
-  padding: 0px 15px;
+  padding: 0px $spacing-base * 4;
 
   @include M {
     width: 100%;
     padding: 0px;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-base * 4;
   }
 }
 
@@ -203,21 +199,17 @@
 .cobrandCardContent {
   position: absolute;
   color: $primary-main;
-  font-size: 72px;
+  font-size: $font-base * 8;
 
-  @include Tablet {
-    font-size: 32px;
-  }
-
-  @include M {
-    font-size: 32px;
+  @include PC {
+    font-size: $font-base * 18;
   }
 }
 
 .list.commend > li {
   width: 25%;
-  padding: 0px 15px;
-  margin-bottom: 32px;
+  padding: 0px $spacing-base * 4;
+  margin-bottom: $spacing-base * 8;
 
   @include Tablet {
     width: 50%;
@@ -247,9 +239,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: $spacing-base * 4;
   
   &> footer {
-    margin-top: 52px;
+    margin-top: $spacing-base * 13;
   }
 }

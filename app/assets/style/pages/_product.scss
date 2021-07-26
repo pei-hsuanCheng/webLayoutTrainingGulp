@@ -1,27 +1,27 @@
 .mTwoBanner{
   display: flex;
 }
-.mFrameHd.product{
-  h2{
-    font-size: 42px;
+.mFrameHd.product {
+  h2 {
+    font-size: $font-base * 10;
 
     @include Tablet {
-      font-size: 32px;
+      font-size: $font-base * 8;
     }
 
     @include M {
-      font-size: 24px;
+      font-size: $font-base * 6;
     }
   }
-  h3{
-    font-size: 32px;
+  h3 {
+    font-size: $font-base * 8;
 
     @include Tablet {
-      font-size: 24px;
+      font-size: $font-base * 6;
     }
 
     @include M {
-      font-size: 16px;
+      font-size: $font-base * 4;
     }
   }
 }
@@ -40,11 +40,10 @@
 
 .productCardWrap{
   width: 25%;
-  padding: 15px;
+  padding: $font-base * 8;
 
   @include Tablet {
     width: 50%;
-    padding: 15px;
 
     &:nth-child(n+11) {
       display: none;
@@ -73,13 +72,13 @@
   width: 24px;
   height: 24px;
   display: inline-block;
-  margin-right: 8px;
-  border-radius: 4px;
+  margin-right: $spacing-base * 2;
+  border-radius: $spacing-base;
 
   @include M {
     width: 16px;
     height: 16px;
-    margin-right: 4px;
+    margin-right: $spacing-base;
   }
 
   &:nth-child(1) {
